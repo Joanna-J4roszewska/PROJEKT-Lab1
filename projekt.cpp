@@ -140,7 +140,7 @@ void Logic() {
     if (x >= width || x < 0 || y >= height || y < 0)
         gameOver = true;
   
-    for (int i = 2; i < nTail; i++)//i=2 zeby te segmenty z ktorymi pojawia sie glowa nie tworzyly kolizji
+    for (int i = 2; i < nTail; i++)
         if (tailX[i] == x && tailY[i] == y)
             gameOver = true;
     
